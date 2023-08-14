@@ -2,140 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;
-background-color:  #4789cf;
-}
-.center-content {
-    text-align: center;
-  }
-  .navbar-container {
-  display: flex;
-  justify-content: center;
-  background-color: #333;
-  height: 50px;
-  position: fixed; /* Add this line to make the navbar fixed */
-  top: 0; /* Add this line to position the navbar at the top of the page */
-  width: 100%; /* Ensure the navbar spans the full width */
-  z-index: 100; /* Add a high z-index to ensure the navbar is on top of other content */
-}
-
-.topnav {
-  overflow: hidden;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #333;
-  color: white;
-}
-/* Slideshow Styles */
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 5px solid black;
-  background-color: #4789cf;
-  width: 15%;
-  height: 330px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: white;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: white;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid black;
-  width: 85%;
-  border-left: none;
-  height: 330px;
-  overflow-y: auto; /* Add this to make content scrollable */
-}
-/*#projects {
-  text-align: center; 
-}*/
-.project a {
-  display: inline-block; /* Ensures the border wraps around the image */
-  border: 5px solid #333; /* Adds a colored border around the image */
-  padding: 5px; /* Adds some padding within the border */
-  margin: 10px; /* Adds space around each image link */
-}
-
-
-.project {
-  margin-bottom: 20px; /* Add some space between each project */
-}
-.project img {
-  max-width: 100%; /* This ensures the image won't exceed its container's width */
-  height: auto; /* This maintains the aspect ratio of the image */
-}
-@media screen and (max-width: 600px) {
-  .tab {
-    width: 100%;
-    height: auto;
-    float: none;
-  }
-  .tab button {
-    padding: 12px 8px;
-  }
-  .tabcontent {
-    width: 100%;
-    float: none;
-    padding: 12px;
-  }
-}
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<section id="home"></section>
-<section id="about">
+<section id="home">
+
     <div class="center-content">
       <div class="navbar-container">
       <div class="topnav">
@@ -147,47 +18,34 @@ background-color:  #4789cf;
     
   </div>
 </div>
+</section>
+<section id="about">
+  <div class ="Title">
         <h2>Kenyeres János</h2>
         <p>Backend developer portfolio</p>
       </div>
-      
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="easy.jpg" style="width:100%">
-        </div>
-    
-      
-        <div class="mySlides fade">
-          <img src="peasy.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="lemon.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="squeezy.jpg" style="width:100%">
-          </div>
       </div>
-      
-
-
   
   <div style="padding-left:16px">
     <b><h2>Welcome to my portfolio!</h2></b>
 <p>About me:</p>
 <p>First and foremost: my wife is the most important loved one in the world to me. My dog is the second. They are the biggest part of my life and nothing can change that.</p>
 <p>My original qualifications are as a Cad-Cam technician and Cnc operator, where precision and attention to detail were paramount. However, my journey took an exciting turn when I decided to delve into the world of coding.</p>
-<p>Over the years, while working at various companies, I had the privilege of gaining insights into coding from friends who had formal education in programming. My curiosity about the world of coding grew, and I embarked on a self-driven journey of learning and exploration.</p>
-<p>This journey has been truly transformative. I initially immersed myself in C#, a versatile and powerful language, before venturing into the realm of Java. My curiosity didn't stop there; I delved into databases, honed my skills in HTML and CSS, and even dabbled in JavaScript.</p>
-<p>What sets me apart is not only my ability to solve real-world challenges using coding but also my deep understanding and application of fundamental programming principles. I firmly grasp object-oriented programming (OOP) methodologies and concepts, allowing me to design modular, scalable, and maintainable solutions.</p>
+<p>Over the years, while working at various companies, I had the privilege of gaining insights into coding from friends who had formal education in programming. My curiosity about the world of coding grew, </p>
+<p>and I embarked on a self-driven journey of learning and exploration.</p>
+<p>This journey has been truly transformative. I initially immersed myself in C#, a versatile and powerful language, before venturing into the realm of Java. My curiosity didn't stop there; I delved into databases, </p>
+<p>honed my skills in HTML and CSS, and even dabbled in JavaScript.</p>
+<p>What sets me apart is not only my ability to solve real-world challenges using coding but also my deep understanding and application of fundamental programming principles. I firmly grasp object-oriented programming (OOP) </p>
+<p>methodologies and concepts, allowing me to design modular, scalable, and maintainable solutions.</p>
 <p>My commitment to writing clean, elegant, and maintainable code is unwavering. I firmly believe that clean code is not just a practice; it's a mindset that enhances collaboration, ensures readability, and minimizes technical debt.</p>
-<p>Now, after successfully crafting desktop applications to solve workplace challenges, I stand at a pivotal juncture. It's time to channel my passion for coding into a fulfilling career where I can continue to learn, grow, and contribute meaningfully to innovative projects.</p>
+<p>Now, after successfully crafting desktop applications to solve workplace challenges, I stand at a pivotal juncture. It's time to channel my passion for coding into a fulfilling career where I can continue to learn,</p>
+<p> grow, and contribute meaningfully to innovative projects.</p>
 <p>As I step forward in my coding journey, I am excited about the prospects of joining a team where I can leverage my skills, contribute to impactful projects, and keep refining my craft.</p>
 <p>I'm extremely loyal to the company I work for as long as our interests align.</p>
 
-
-  </div>
 </section>
+  </div>
+
 <section id="stack">
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'C#')" id="defaultOpen">C#</button>
@@ -311,7 +169,7 @@ document.getElementById("defaultOpen").click();
     <p>load, play, pause and stop playing music tracks. Its has very low memory consumption.</p>
     <p></p>
     <a href="https://github.com/kjanos89/Simple-Music-Player">
-      <img src="MusicPlayer.jpg" alt="A very simple music player desktop app I created using C#." />
+      <img src="Pictures/MusicPlayer.jpg" alt="A very simple music player desktop app I created using C#." />
     </a>
   </div>
   <div class="project">
@@ -320,7 +178,7 @@ document.getElementById("defaultOpen").click();
     <p>Its far from an internet bank, but still quite usable.</p>
     <p></p>
     <a href="https://github.com/kjanos89/FinancesApp">
-      <img src="Finances.jpg" alt="An app to track finances, later on I plan to connect it with a database and save the data there instead of in a json file." />
+      <img src="Pictures/Finances.jpg" alt="An app to track finances, later on I plan to connect it with a database and save the data there instead of in a json file." />
     </a>
   </div>
   <div class="project">
@@ -329,7 +187,7 @@ document.getElementById("defaultOpen").click();
     <p>returned information about the Post call. It only stores in/retrieves data from memory, but a database is only a small step from here.</p>
     <p></p>
     <a href="https://github.com/kjanos89/TodoAPI">
-      <img src="TodoAPI.jpg" alt="An API that stores todo things in the memory and can also retrieve them." />
+      <img src="Pictures/TodoAPI.jpg" alt="An API that stores todo things in the memory and can also retrieve them." />
     </a>
   </div>
 </section>
