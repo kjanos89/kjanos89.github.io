@@ -40,7 +40,7 @@ background-color:  #4789cf;
 }
 /* Slideshow Styles */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
@@ -76,12 +76,12 @@ background-color:  #4789cf;
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #749c32;
+  background-color: white;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #749c32;
+  background-color: white;
 }
 
 /* Style the tab content */
@@ -93,6 +93,13 @@ background-color:  #4789cf;
   border-left: none;
   height: 330px;
   overflow-y: auto; /* Add this to make content scrollable */
+}
+#projects {
+  text-align: center; /* Center-align the content within the section */
+}
+
+.project {
+  margin-bottom: 20px; /* Add some space between each project */
 }
 @media screen and (max-width: 600px) {
   .tab {
@@ -118,10 +125,12 @@ background-color:  #4789cf;
         <h2>Kenyeres János</h2>
         <p>Backend developer portfolio</p>
       </div>
+      
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="easy.jpg" style="width:100%">
         </div>
+    
       
         <div class="mySlides fade">
           <img src="peasy.jpg" style="width:100%">
@@ -148,8 +157,8 @@ background-color:  #4789cf;
 </div>
   
   <div style="padding-left:16px">
-    <h2>Top Navigation Example</h2>
-    <p>Some content..</p>
+    <b><h2>Welcome to my portfolio!</h2></b>
+    <p>About me:</p>
   </div>
 </section>
 <section id="stack">
@@ -213,8 +222,36 @@ document.getElementById("defaultOpen").click();
 </script>
 </section>
 <section id="projects">
-<p><b>Some of my projects so far:</b></p>
-</section> 
+  <p><b>Some of my projects so far:</b></p>
+  <div class="project">
+    <p></p>
+    <p>This is a very simple music player desktop application I created using WPF. The program is fairly straightforward and its only function is to</p>
+    <p>load, play, pause and stop playing music tracks. Its has very low memory consumption.</p>
+    <p></p>
+    <a href="https://github.com/kjanos89/Simple-Music-Player">
+      <img src="MusicPlayer.jpg" alt="A very simple music player desktop app I created using C#." />
+    </a>
+  </div>
+  <div class="project">
+    <p></p>
+    <p>Finances app that tracks incomes and spendings and calculates their sum accordingly. Also saves data into a Json file.</p>
+    <p>Its far from an internet bank, but still quite usable.</p>
+    <p></p>
+    <a href="https://github.com/kjanos89/FinancesApp">
+      <img src="Finances.jpg" alt="An app to track finances, later on I plan to connect it with a database and save the data there instead of in a json file." />
+    </a>
+  </div>
+  <div class="project">
+    <p></p>
+    <p>Its my first try at building an API. Spent a few hours fixing errors here and there but finally Postman gave me proper</p>
+    <p>returned information about the Post call. It only stores in/retrieves data from memory, but a database is only a small step from here.</p>
+    <p></p>
+    <a href="https://github.com/kjanos89/TodoAPI">
+      <img src="TodoAPI.jpg" alt="An API that stores todo things in the memory and can also retrieve them." />
+    </a>
+  </div>
+</section>
+
 <section id="contact">
     <b><a href="URL">Facebook profile</a></b>
     <b><a href="URL">Linkedin profile</a></b>
