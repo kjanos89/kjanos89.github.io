@@ -38,6 +38,17 @@ background-color:  #4789cf;
   background-color: #333;
   color: white;
 }
+/* Slideshow Styles */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
 
 /* Style the tab */
 .tab {
@@ -107,6 +118,23 @@ background-color:  #4789cf;
         <h2>Kenyeres János</h2>
         <p>Backend developer portfolio</p>
       </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="easy.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="peasy.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="lemon.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="squeezy.jpg" style="width:100%">
+          </div>
+      </div>
+      
 
 <div class="navbar-container">
 <div class="topnav">
@@ -194,5 +222,24 @@ document.getElementById("defaultOpen").click();
     <b><p>E-mail: kjanos89@gmail.com</p></b>
 
 </section> 
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
+    
 </body>
 </html> 
